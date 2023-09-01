@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 
-def send_email(smtpHost,port, sendAddr, password, recipientAddrs, subject='', content='', file_path):
+def send_email(smtpHost,port, sendAddr, password, recipientAddrs, subject='', content='', file_path=''):
     msg = email.mime.multipart.MIMEMultipart()
     msg['from'] = sendAddr
     msg['to'] = recipientAddrs
